@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppRootComponent } from './app-root.component';
+import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductAlertsComponent } from './product-alerts/product-alerts.component';
@@ -34,7 +34,7 @@ const appRoutes: Routes = [
     )
   ],
   declarations: [
-    AppRootComponent,
+    AppComponent,
     TopBarComponent,
     ProductListComponent,
     ProductAlertsComponent,
@@ -43,7 +43,7 @@ const appRoutes: Routes = [
     CartComponent,
     ShippingComponent
   ],
-  bootstrap: [ AppRootComponent ],
+  bootstrap: [ AppComponent ],
   providers: [CartService]
 })
 export class AppModule { }
